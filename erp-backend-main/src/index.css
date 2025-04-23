@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.InnerSidebar {
+  @apply w-[84%] h-screen bg-white m-[0.2px] border-2 border-black;
+}
+
+.ProfileDiv {
+  @apply bg-gray-700 text-white font-bold w-[90%] flex justify-center mx-auto h-28 border-gray-200 border-b-2;
+}
+
+.SidebarNavlink {
+  @apply bg-gray-600 text-white font-bold w-full flex mx-auto py-3;
+}
+
+.Active {
+  @apply bg-gray-600 text-white font-bold w-full flex mx-auto py-3 items-center; /* Same as SidebarNavlink */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
